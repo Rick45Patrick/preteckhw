@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: dodgerblue;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery div {
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Image Gallery</h1>
+
+  <div class="gallery">
+    <div><img src="https://via.placeholder.com/300x200" alt="Sample Image 1"></div>
+    <div><img src="https://via.placeholder.com/300x200" alt="Sample Image 2"></div>
+    <div><img src="https://via.placeholder.com/300x200" alt="Sample Image 3"></div>
+    <div><img src="https://via.placeholder.com/300x200" alt="Sample Image 4"></div>
+  </div>
+  <div class="gallery">
+      <video width="250px" height="300px" src="">
+      </video>
+  </div>
+
+</body>
+</html>
